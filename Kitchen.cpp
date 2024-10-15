@@ -39,12 +39,11 @@ int Kitchen :: getPrepTimeSum() const {
 
 int Kitchen :: calculateAvgPrepTime() const {
     if (getCurrentSize()==0){
-
         return 0;
     }  
 
-    int avg = static_cast <double> (totalPrep_time)/getCurrentSize();
-    return std :: round(avg);
+    double average = static_cast <double> (totalPrep_time)/getCurrentSize();
+    return std :: round(average);
 }
 
 
@@ -127,3 +126,4 @@ void Kitchen :: kitchenReport() const {
               << "ELABORATE: " << std::fixed << std::setprecision(2) 
               << calculateElaboratePercentage() << "%\n";
 }
+
