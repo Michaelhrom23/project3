@@ -3,13 +3,14 @@
 #define KITCHEN_HPP
 
 //needed libraries
-#include "ArrayBag.hpp"
-#include "Dish.hpp"
+
 #include <iostream>
-#include <iomanip> 
+#include <iomanip>
+#include "Dish.hpp" 
 #include <string>
 #include <vector>
-#include <cmath>  
+#include <cmath>
+#include "ArrayBag.hpp"
 
 class Kitchen:public ArrayBag<Dish> //using array bag
 {  
